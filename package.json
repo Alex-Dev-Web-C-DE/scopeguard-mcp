@@ -1,0 +1,19 @@
+{
+  "name": "@alex-dev-web-c-de/scopeguard-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for ScopeGuard — sanctions scope monitoring with webhook alerts",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "scopeguard-mcp": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": ["mcp", "sanctions", "compliance", "scopeguard", "webhook"],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.23.8"
+  }
+}
