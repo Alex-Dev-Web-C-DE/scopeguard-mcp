@@ -1,0 +1,8 @@
+name: scopeguard
+version: 1
+description: "Sanctions scope monitoring. Track specific entities for sanctions changes."
+author: JSONexLab
+homepage: https://jsonexlab.com/scopeguard/
+entry: src/index.js
+runtime: nodejs
+transport: stdio

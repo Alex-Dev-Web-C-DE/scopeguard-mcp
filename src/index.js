@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// scopeguard-mcp — MCP server for ScopeGuard
+// scopeguard-mcp - MCP server for ScopeGuard
 
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
@@ -73,7 +73,7 @@ server.tool(
         return { content: [{ type: "text", text: "No scopes registered yet." }] };
       }
       const lines = data.scopes.map(function(s) {
-        return "• " + s.query + " (id: " + s.id + ")\n  last_check: " + (s.last_check || "never") + "\n  last_matches: " + (s.last_match_count != null ? s.last_match_count : "-") + "\n  status: " + (s.last_status || "-");
+        return "- " + s.query + " (id: " + s.id + ")\n  last_check: " + (s.last_check || "never") + "\n  last_matches: " + (s.last_match_count != null ? s.last_match_count : "-") + "\n  status: " + (s.last_status || "-");
       });
       return {
         content: [{
@@ -108,17 +108,17 @@ server.tool(
         return {
           content: [{
             type: "text",
-            text: "CLEAR — no matches for " + query + " in OFAC/UK/EU/UN lists.",
+            text: "CLEAR - no matches for " + query + " in OFAC/UK/EU/UN lists.",
           }],
         };
       }
       const summary = matches.map(function(m) {
-        return "• " + m.name + " [" + m.list + "] — score " + m.score + "\n  country: " + (m.country || "-") + " | type: " + m.type + "\n  " + m.source_url;
+        return "- " + m.name + " [" + m.list + "] - score " + m.score + "\n  country: " + (m.country || "-") + " | type: " + m.type + "\n  " + m.source_url;
       }).join("\n\n");
       return {
         content: [{
           type: "text",
-          text: result.status + " — " + matches.length + " match(es) for " + query + ":\n\n" + summary,
+          text: result.status + " - " + matches.length + " match(es) for " + query + ":\n\n" + summary,
         }],
       };
     } catch (e) {

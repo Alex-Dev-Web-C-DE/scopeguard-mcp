@@ -1,7 +1,7 @@
 {
   "name": "@alex-dev-web-c-de/scopeguard-mcp",
   "version": "1.0.0",
-  "description": "MCP server for ScopeGuard — sanctions scope monitoring with webhook alerts",
+  "description": "MCP server for ScopeGuard - sanctions scope monitoring with webhook alerts",
   "type": "module",
   "main": "src/index.js",
   "bin": {
