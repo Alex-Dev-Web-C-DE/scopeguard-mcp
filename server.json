@@ -3,7 +3,7 @@
   "name": "io.github.Alex-Dev-Web-C-DE/scopeguard",
   "description": "Sanctions scope monitoring. Track entities for changes in OFAC/UK/EU/UN lists.",
   "status": "active",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "url": "https://github.com/Alex-Dev-Web-C-DE/scopeguard-mcp",
     "source": "github"
@@ -12,7 +12,7 @@
     {
       "registryType": "npm",
       "identifier": "@alex-dev-web-c-de/scopeguard-mcp",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "transport": {
         "type": "stdio"
       }
