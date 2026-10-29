@@ -1,13 +1,9 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.Alex-Dev-Web-C-DE/scopeguard",
-  "description": "Sanctions scope monitoring. Track entities for changes in OFAC/UK/EU/UN lists.",
-  "status": "active",
+  "title": "ScopeGuard",
+  "description": "Sanctions scope monitoring. Track entities for OFAC/UK/EU/UN list changes.",
   "version": "1.0.1",
-  "repository": {
-    "url": "https://github.com/Alex-Dev-Web-C-DE/scopeguard-mcp",
-    "source": "github"
-  },
   "packages": [
     {
       "registryType": "npm",
@@ -17,5 +13,9 @@
         "type": "stdio"
       }
     }
-  ]
+  ],
+  "repository": {
+    "url": "https://github.com/Alex-Dev-Web-C-DE/scopeguard-mcp",
+    "source": "github"
+  }
 }
